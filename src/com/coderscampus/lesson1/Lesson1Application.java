@@ -3,10 +3,15 @@ package com.coderscampus.lesson1;
 public class Lesson1Application {
 
 	public static void main(String[] args) {
+		
 		Teacher physicsTeacher = new PhysicsTeacher();
+		
+//		This is the wordier way to write out teach(1 String) method.		
+//		PhysicsTeacher castedPhysicsTeacher = (PhysicsTeacher)physicsTeacher;
 			System.out.println(physicsTeacher.getClasses());
 			System.out.println(physicsTeacher.getLevelOfEducation());
-			physicsTeacher.teach("Trevor Page");
+//			castedPhysicsTeacher.teach("Trevor Page");
+			((PhysicsTeacher)physicsTeacher).teach("Trevor Page");
 			System.out.println("----");
 		
 		Teacher compSciTeacher = new CompSciTeacher();

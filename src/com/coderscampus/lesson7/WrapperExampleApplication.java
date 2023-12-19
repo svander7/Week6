@@ -18,6 +18,8 @@ public class WrapperExampleApplication {
 		int primInt = 9;
 		Integer wrapperInt = 9; // this is auto-boxing
 		
+		primInt = Integer.valueOf(9); // this is un-boxing
+		
 		String someNumber = "123";
 		String someOtherNumber = "456";
 		
